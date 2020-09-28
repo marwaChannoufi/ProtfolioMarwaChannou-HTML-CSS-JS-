@@ -126,7 +126,7 @@ for(let i=0;i<totalNavList;i++){
 }
 
  function showSection(el){
-     console.log(el.getAttribute("href").split("#")[1])
+    //  console.log(el.getAttribute("href").split("#")[1])
     for(let i=0;i<totalSection;i++){
         allSectiion[i].classList.remove("active")
     }
