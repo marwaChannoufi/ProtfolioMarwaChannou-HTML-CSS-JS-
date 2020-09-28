@@ -139,6 +139,41 @@
  .hidden{
      display: none!important;
  }
+ /* preloader */
+ .preloader{
+     background-color: #222222;
+     position: fixed;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     z-index: 150;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 2s ease;
+ }
+ .preloader.opacity-0{
+     opacity: 0;
+ }
+ .preloader .loader{
+     border: 4px solid white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    animation: spin 2s linear infinite;
+
+ }
+ @keyframes spin{
+     0%{
+         transform: rotate(0deg);
+     }
+     100%{
+         transform: rotate(360deg);
+     }
+ }
  /* Aside */
  .aside{
      width: 270px;
@@ -887,26 +922,7 @@ box-shadow: 0 0 20px rgba(48, 46 ,77, 0.30);
 
 /* Responsive */
 @media(max-width:1199px){
-    .about .about-content .personal-info .info-item p span{
-        display: block;
-        margin-left: 0;
-    }
-}
-@media (max-width:991px){
 
-    .blog .blog-item,
-.portfolio .portfolio-item,
-    .service .service-item {  
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .contact .contact-form .col-6{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-@media (max-width: 767px){
-    
     .aside .nav-toggler{
         display: flex;
         left: 30px;
@@ -929,6 +945,27 @@ box-shadow: 0 0 20px rgba(48, 46 ,77, 0.30);
         left: 270px;
     }
 
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:991px){
+
+    .blog .blog-item,
+.portfolio .portfolio-item,
+    .service .service-item {  
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .contact .contact-form .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px){
+    
+    
     .service .service-item,
     .about .about-content .education,
     .about .about-content .experience,

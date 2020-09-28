@@ -1,4 +1,11 @@
 
+
+window.addEventListener('load',function(){
+    document.querySelector('.preloader').classList.add('opacity-0')
+setTimeout(()=>{
+    document.querySelector('.preloader').style.display="none"
+},1000)
+})
 // console.log('hello world')
 const portfolioContainer=document.querySelector('.portfolio-filter')  // console.log(portfolioContainer)
 const filterBtns=portfolioContainer.children   // console.log(filterBtns)
@@ -122,8 +129,12 @@ for(let i=0;i<totalNavList;i++){
         }
         this.classList.add('active')
          showSection(this)
+         if(window.innerWidth<1200){
+    asideSectionTogglerBtn()
+}
     })
 }
+
 
  function showSection(el){
     //  console.log(el.getAttribute("href").split("#")[1])
