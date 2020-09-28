@@ -149,7 +149,21 @@ for(let i=0;i<totalNavList;i++){
     document.querySelector("#"+target).classList.add("active")
  }
 
+ function updateNav(el){
+    const target=el.getAttribute("href").split("#")[1]
+    for(let i=0;i<totalNavList;i++){
+        navList[i].querySelector('a').classList.remove('active')
+        if(target===navList[i].querySelector('a').getAttribute("href").split("#")[1]){
+            navList[i].querySelector('a').classList.add('active')
+        }
+    }
+ }
 
+document.querySelector(".hire-me").addEventListener('click',function(){
+    // console.log(this)
+    showSection(this)
+    updateNav(this)
+})
 
  const navTogglerBtn=document.querySelector('.nav-toggler')
  const aside=document.querySelector('.aside')
