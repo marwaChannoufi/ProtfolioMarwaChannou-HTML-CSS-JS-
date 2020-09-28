@@ -190,7 +190,7 @@
      cursor: pointer;
      position: fixed;
      left: 300px;
-     top: 30px;
+     top: 20px;
      z-index: 11;
      border-radius: 5px;
      background-color: #fdf9ff;
@@ -912,7 +912,7 @@ box-shadow: 0 0 20px rgba(48, 46 ,77, 0.30);
         left: 30px;
     }
     .aside .nav-toggler.open{
-        left: 300px;
+        left: 225px;
     }
     .aside{
         left:-270px;
