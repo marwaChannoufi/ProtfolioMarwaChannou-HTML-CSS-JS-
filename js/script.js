@@ -149,4 +149,7 @@ for(let i=0;i<totalNavList;i++){
 function asideSectionTogglerBtn(){
     aside.classList.toggle('open')
     navTogglerBtn.classList.toggle('open')
+    for(let i=0;i<totalSection;i++){
+        allSectiion[i].classList.toggle("open")
+    }
 }
