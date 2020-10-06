@@ -96,6 +96,7 @@
     left: 0;
     margin-top: 8px;
 }
+
  .row{
      display: flex;
      flex-wrap: wrap;
@@ -791,6 +792,8 @@ color: #302e4d;
     /* background-color: red; */
     flex: 0 0 33.33%;
     max-width: 33.33%;
+    /* height: 600px; */
+    margin-bottom: 20px;
 }
 .blog .blog-item-inner{
     border-radius: 10px;
@@ -989,4 +992,4 @@ box-shadow: 0 0 20px rgba(48, 46 ,77, 0.30);
     .portfolio .portfolio-filter button{
         margin-bottom: 15px;
     }
-}
+} 
